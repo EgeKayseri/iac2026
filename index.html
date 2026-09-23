@@ -260,12 +260,12 @@ dialog::backdrop{background:var(--scrim)}
     <dt>GNF</dt><dd>Global Networking Forum: kısa, interaktif paneller</dd>
     <dt>HLL</dt><dd>Highlight Lecture: günün sonunda öne çıkan bir konuşmacının dersi</dd>
     <dt>YP</dt><dd>Young Professionals: üniversite sonrası genç profesyoneller programı</dd>
-    <dt>B1 / E2</dt><dd>Sempozyum kodları. B1: Yer Gözlemi (IGNIS'in alanı). E2: Öğrenci Konferansı.</dd>
+    <dt>B1 / B5 / E5.4</dt><dd>Oturum kodları. B1: Yer Gözlemi (Hall 4). B5.4: Yer gözleminde yapay zekâ. E5.4: Afet yönetimi. E2: Öğrenci Konferansı (Hall 1). E1: Uzay eğitimi (E1 salonu).</dd>
     <dt>*</dt><dd>Davet edilmediğimiz, giremeyeceğimiz etkinlik (davetli, üyelere ya da genç profesyonellere özel)</dd>
   </dl>
 </section>
 
-<footer>Kaynaklar: resmi IAC 2026 takvimi ve sergi planı, IP Support e-postası, iafastro.org (Locations, Prologue, Next Generation Activities, PS Lab), iac2026.org (FAQ, Venue). Takvim görselden okunduğu için saatler ±10 dakika şaşabilir; kongre haftası son hali için IAF App'e bakın.</footer>
+<footer>Kaynaklar: resmi IAC 2026 takvimi ve sergi planı, IP Support e-postası, iafastro.org (Locations, Prologue, Next Generation Activities, PS Lab), iac2026.org (FAQ, Venue), IAF oturum kataloğu (iafastro.directory, salonlara göre). Takvim görselden okunduğu için saatler ±10 dakika şaşabilir; kongre haftası son hali için IAF App'e bakın.</footer>
 </div>
 
 <dialog id="modal" aria-labelledby="mTitle">
@@ -315,7 +315,7 @@ const PLAN=[
   ["12:00–13:00","Pazartesi IP oturumunu izleyin","IP Alanı, zemin kat","Saati öne çekildi. Süre nasıl işliyor, moderatör ne soruyor, izleyin. Sonra ekran #23'ün başında deneyin.","must"],
   ["13:30–15:30","Açılış Töreni","NEST Futbol Sahası (açık hava)","13:30'da oturmaya başlanıyor, erken gidin. Şapka ve su alın.","must"],
   ["Gün içi","E-postayı kontrol edin","","IP yarışması finalistlerine bugün e-posta gidiyor.","must"],
-  ["16:30–19:00","B1 Yer Gözlemi oturumu veya GNF","NEST","","opt"],
+  ["16:30–19:00","E2.1 Öğrenci Konferansı, 1. bölüm","Hall 1, NEST","Yaşıtlarımızın ve üniversite öğrencilerinin sözlü sunumları. Salı 10:15'teki 2. bölüm provayla çakıştığı için bunu kaçırmayın. Alternatif: E1.1 Lift Off, ilk ve ortaöğretimde uzay eğitimi (E1 salonu).","must"],
   ["19:30–22:00","Welcome Reception","NEST (yeri App'te)","Kayıt türümüze dahil olup olmadığını kayıt masasında sorun. Akşam etkinliklerine öğretmenle gidin.","check"]]},
  {theme:"Endüstri Günü: sunum günümüz",items:[
   ["09:00–10:00","PE 2: Ev Sahibi Plenary'si","NEST ana salon","Türkiye'nin uzay programı.","opt"],
@@ -324,30 +324,32 @@ const PLAN=[
   ["13:15–13:25","IGNIS sunumu","Ekran #23","Geri sayım siz başlatınca işliyor. Gelmeyen olursa kalan süreyi soru-cevapla doldurabilirsiniz ama sırayı değiştirmeyin.","you"],
   ["13:25–13:45","Oturumun kalanında kalın","Ekran #23","Sonraki sunumları dinleyin, soru sorun, QR kodu paylaşın.","must"],
   ["13:45–14:45","PE 3","NEST ana salon","","opt"],
-  ["14:45–16:30","IAF Startup Competition","NEST","Girişimlerin sunumlarını izlemek, IGNIS'i anlatmaya fikir verir.","opt"],
+  ["15:00–16:30","B1.2 Earth Observation Systems","Hall 4, NEST","Yer gözlemi uydu sistemleri. 16:30'da Career Forum'a geçin.","opt"],
+  ["14:45–16:30","IAF Startup Competition (alternatif)","NEST","Girişimlerin sunumlarını izlemek, IGNIS'i anlatmaya fikir verir.","opt"],
   ["16:30–17:45","IAF Career Forum","NEST","Ajans ve şirketlerle kariyer yolları. Üniversite ve bölüm tavsiyesi istemek için ideal.","must"],
   ["17:45–18:45","HLL 1","NEST","","opt"],
   ["19:00–21:00","YP Speed Mentoring","Gloria Sports Arena","","no"]]},
  {theme:"Çeşitlilik Günü",items:[
   ["09:00–10:00","PE 4","NEST ana salon","","opt"],
-  ["10:15–12:45","E2 Öğrenci Konferansı oturumu","NEST (salon App'te)","Yaşıtlarımızın sözlü sunumları. Gelecek yıl sözlü bildiri için fikir.","must"],
+  ["10:15–12:45","B1.7 Çevre ve iklim için yer gözlemi","Hall 4, NEST","Earth Observations to Address Earth's Environment and Climate Challenges. Yangın ve iklim çalışmaları büyük ihtimalle burada.","must"],
   ["12:45–13:45","Çarşamba IP'lerini gezin","IP Alanı","Diğer öğrencilere soru sorun, tanışın.","opt"],
   ["13:45–14:45","IAF Next Generation Plenary","D1 ve D2, NEST","\"Yörünge altyapısı\" paneli, genç konuşmacılar. Herkese açık.","must"],
-  ["15:00–17:30","B1 Yer Gözlemi oturumu","NEST","Uydu verisi ve yapay zekâyla orman yangını çalışanlarını bulun, sonra kendinizi tanıtın.","must"],
+  ["15:00–17:30","B1.4 Yer gözlemi veri sistemleri","Hall 4, NEST","Earth Observation Data Systems and Technology. Uydu verisini işleyenler burada; oturum sonunda kendinizi tanıtın.","must"],
   ["17:45–18:45","HLL 2","NEST","","opt"],
   ["12:30–13:30","IDEA \"3G+\" Diversity Luncheon","","","no"],
   ["19:00–21:00","YP Next Generation Panel","Gloria Sports Arena","","no"]]},
  {theme:"Bilim ve Akademi Günü: ödül töreni",items:[
   ["09:00–10:00","PE 6","NEST ana salon","","opt"],
-  ["10:15–12:45","Teknik oturumlar","NEST","B1 veya E1 (uzay eğitimi) oturumlarından birini seçin.","opt"],
+  ["10:15–12:45","B1.5 Yer gözleminin toplumsal ve ekonomik uygulamaları","Hall 4, NEST","Alternatif: E1.6 Calling Planet Earth (E1 salonu) veya B5.3 iklim ve sürdürülebilirlik için ticari uydu uygulamaları (Hall 1).","opt"],
   ["13:00–13:30","IP Yarışması Ödül Töreni ve kokteyl","D3, NEST","İlk 5 IP açıklanıyor. Finalist olmasak da IP sunucusu olarak davetliyiz.","must"],
   ["13:45–14:45","PE 7","NEST ana salon","","opt"],
-  ["15:00–17:30","IISL Moot Court (izleyici)","NEST Plus","Uzay hukuku öğrenci yarışması finali.","opt"],
+  ["15:00–17:30","E5.4 Uzay varlıkları ve afet yönetimi","G2, NEST","Space Assets and Disaster Management. Orman yangını da bir afet: IGNIS'e en yakın oturumlardan. Alternatif: IISL Moot Court (NEST Plus).","must"],
   ["17:45–18:45","HLL 3","NEST","","opt"]]},
  {theme:"Yeni Nesil ve Halk Günü",items:[
   ["08:00–08:45","Next Generation Breakfast","NEST","Davetli olup olmadığımızı kayıt masasında sorun.","check"],
   ["09:00–10:00","Late Breaking News","NEST ana salon","Son dakika görev haberleri ve duyurular.","must"],
-  ["10:15–12:45","Sergi alanında son tur","NEST sergi alanı","Pazartesi konuştuğunuz kişilere tekrar uğrayın, iletişim bilgisi alın.","opt"],
+  ["10:15–12:45","B5.4 Yer gözleminde yapay zekâ","Hall 34, NEST","Advancing Earth observation with artificial intelligence across the full value chain. Tam bizim konumuz: uydu verisi ve yapay zekâ. Sunucularla mutlaka tanışın.","must"],
+  ["12:45–13:45","Sergi alanında son tur","NEST sergi alanı","Pazartesi konuştuğunuz kişilere tekrar uğrayın, iletişim bilgisi alın.","opt"],
   ["Gün içi","Astronot imza günü, bilim şovu","NEST Futbol Sahası","Halk günü, kalabalık olur.","opt"],
   ["16:30–17:30","Kapanış Töreni","NEST","Bayrak IAC 2027 Poznań'a devrediliyor.","must"],
   ["19:30","Gala Dinner","Aspendos Antik Tiyatrosu","Ücretli, ayrı kayıt. Son rezervasyon 6 Ekim.","check"]]}
@@ -409,6 +411,9 @@ const EV=[
  [1,16.5,19,"Technical Sessions","tech","open","NEST (salonlar IAF App'te)","",""],
  [1,16.5,19,"Special Sessions","spec","open","NEST","",""],
  [1,16.5,19.5,"GNF Sessions","gnf","open","NEST","",""],
+ [1,16.5,19,"E2.1 Öğrenci Konferansı (1)","tech","open","Hall 1","Student Conference Part 1: üniversite ve yüksek lisans öğrencilerinin sözlü bildiri sunumları.","Bizim için en uygun Öğrenci Konferansı oturumu (Salı'daki 2. bölüm provayla çakışıyor)."],
+ [1,16.5,19,"B1.1 International Ventures in EO","tech","open","Hall 4","Yer gözleminde uluslararası girişimler.","Katalogda günü net değil (Pazartesi 16:30 ya da Salı 10:15); IAF App'ten kontrol edin."],
+ [1,16.5,19,"E1.1 Lift Off: İlk ve ortaöğretim","tech","open","E1","Primary and Secondary Education: okullarda uzay eğitimi projeleri.",""],
  [1,16.5,19,"IAF General Assembly","meet","no","Gloria Sports Arena","IAF'ın genel kurulu: üye kuruluşların delegeleri oy kullanır, yeni üyeler kabul edilir.",""],
  [1,19.5,22,"Welcome Reception","soc","check","NEST (yeri IAF App'te)","Tüm kongreye yönelik karşılama resepsiyonu: ayakta yiyecek-içecek, herkes serbestçe dolaşıp tanışır. Kongrenin ilk büyük tanışma fırsatı.","Kayıt türümüze dahil olup olmadığını kayıt masasında sorun. Öğretmeninizle birlikte gidin."],
  [1,20,22,"VIP Cocktail","inv","no","","Davetli kokteyl.",""],
@@ -423,6 +428,8 @@ const EV=[
  [2,12.75,13.75,"IP Session (Salı) · IGNIS 13:15","ip","you","IP Alanı, zemin kat, NEST · Ekran #23","Salı IP oturumu. IGNIS sunumu 13:15–13:25 arası ekran #23'te.","12:35'te ekranın başında olun, oturum 13:45'te bitene kadar kalın. 10 dakika toplam; geri sayım başlatınca işler."],
  [2,13.75,14.75,"PE 3","plen","open","NEST ana salon","Endüstri Günü plenary'si.",""],
  [2,15,17.5,"Technical Sessions","tech","open","NEST","",""],
+ [2,15,17.5,"B1.2 Earth Observation Systems","tech","open","Hall 4","Yer gözlemi uydu sistemleri.","16:30'da Career Forum için çıkabilirsiniz."],
+ [2,10.25,12.75,"E2.2 Öğrenci Konferansı (2)","tech","open","Hall 1","Student Conference Part 2.","Provamızla çakışıyor."],
  [2,15,17.5,"Special Sessions","spec","open","NEST","",""],
  [2,15,17.5,"GNF Sessions","gnf","open","NEST","",""],
  [2,14.75,16.5,"IAF Startup Competition","comp","open","NEST","Uzay girişimlerinin jüri önünde kısa sunum yaparak yarıştığı etkinlik.","Kısa ve etkili anlatım örnekleri görmek için izleyin."],
@@ -432,13 +439,15 @@ const EV=[
 
  [3,8,8.75,"IDEA \"3G+\" Diversity Breakfast","brk","check","NEST","IAF'ın çeşitlilik girişimi IDEA \"3G+\" (Coğrafya, Cinsiyet, Kuşak ve daha fazlası) kahvaltısı.",""],
  [3,9,10,"PE 4","plen","open","NEST ana salon","Çeşitlilik Günü plenary'si.",""],
- [3,10.25,12.75,"Technical Sessions","tech","open","NEST","","E2 Öğrenci Konferansı oturumlarından birine girin."],
+ [3,10.25,12.75,"Technical Sessions","tech","open","NEST","",""],
+ [3,10.25,12.75,"B1.7 Çevre ve iklim için EO","tech","open","Hall 4","Earth Observations to Address Earth's Environment and Climate Challenges.","Yangın ve iklim çalışmaları için en olası oturum."],
  [3,10.25,12.75,"Special Sessions","spec","open","NEST","",""],
  [3,10.25,12.5,"GNF Sessions","gnf","open","NEST","",""],
  [3,12.75,13.75,"IP Session (Çarşamba)","ip","open","IP Alanı","Çarşamba IP oturumu.","Diğer öğrencilerin ekranlarını gezin, soru sorun."],
  [3,12.5,13.5,"IDEA \"3G+\" Diversity Luncheon","inv","no","","Davetli öğle yemeği.",""],
  [3,13.75,14.75,"PE 5: IAF Next Generation Plenary","plen","open","D1 ve D2, NEST","Genç konuşmacıların plenary'si. Konu: \"Next Generation Space Infrastructure: Building the Orbital Backbone for a Space-Faring Economy\". Herkese açık.","Kaçırmayın: kendi yaşıtlarına en yakın konuşmacılar burada."],
- [3,15,17.5,"Technical Sessions","tech","open","NEST","","B1 Yer Gözlemi oturumlarında yangın/yapay zekâ çalışanlarını arayın."],
+ [3,15,17.5,"Technical Sessions","tech","open","NEST","",""],
+ [3,15,17.5,"B1.4 EO veri sistemleri","tech","open","Hall 4","Earth Observation Data Systems and Technology.","Uydu verisi işleyen ekiplerle tanışın."],
  [3,15,17.5,"Special Sessions","spec","open","NEST","",""],
  [3,15,17.5,"GNF Sessions","gnf","open","NEST","",""],
  [3,17.75,18.75,"HLL 2","hll","open","NEST","",""],
@@ -457,6 +466,8 @@ const EV=[
  [4,15,17.5,"Technical Sessions","tech","open","NEST","",""],
  [4,15,17.5,"Special Sessions","spec","open","NEST","",""],
  [4,15,17.5,"GNF Sessions","gnf","open","NEST","",""],
+ [4,15,17.5,"E5.4 Uzay varlıkları ve afet yönetimi","tech","open","G2","Space Assets and Disaster Management.","IGNIS'e en yakın oturumlardan: orman yangını bir afet."],
+ [4,10.25,12.75,"B1.5 EO toplumsal/ekonomik uygulamalar","tech","open","Hall 4","Earth Observation Societal and Economic Applications.",""],
  [4,15,17.5,"IISL Moot Court","comp","open","NEST Plus","Manfred Lachs Uzay Hukuku Yarışması: hukuk öğrencileri kurgusal bir uzay davasını gerçek yargıçlar önünde savunur. Yarışma katılımcılara ayrılmış, ama izleyici olarak girilebiliyor.",""],
  [4,17.75,18.75,"HLL 3","hll","open","NEST","",""],
  [4,19,21,"IAC 2027 Launch Reception","inv","no","","Bir sonraki IAC'nin (Poznań, Polonya) tanıtım resepsiyonu, davetli.","Sergi alanındaki IAC 2027 Poznań standından (1B-04) bilgi alabilirsiniz."],
@@ -468,6 +479,7 @@ const EV=[
  [5,10.25,12.75,"Special Sessions","spec","open","NEST","",""],
  [5,10.25,12.5,"GNF Sessions","gnf","open","NEST","",""],
  [5,10.25,12.75,"IAF General Assembly","meet","no","","IAF genel kurulunun ikinci oturumu.",""],
+ [5,10.25,12.75,"B5.4 Yer gözleminde yapay zekâ","tech","open","Hall 34","Advancing Earth observation with artificial intelligence across the full value chain.","Tam bizim konumuz. Kaçırmayın, sunucularla tanışın."],
  [5,12.75,13.75,"IP Session (Cuma)","ip","open","IP Alanı","Cuma IP oturumu.",""],
  [5,12.5,13.75,"VIP Luncheon","inv","no","","Davetli öğle yemeği.",""],
  [5,13.75,16.25,"Technical Sessions","tech","open","NEST","",""],
@@ -477,7 +489,7 @@ const EV=[
  [5,19,22,"Gala Dinner","soc","check","Aspendos Antik Tiyatrosu","Kongrenin gala gecesi, Aspendos Antik Tiyatrosu'nda 19:30'da. Ücretli ve ayrı kayıt gerektiriyor; son rezervasyon 6 Ekim gece yarısı.","Aile ve öğretmenle konuşarak karar verin."]
 ];
 const GEN={
- tech:"Salon ve oturum listesi IAF App'te. Arama kutusuna 'wildfire', 'fire' veya 'Earth observation' yazın; B1 (Yer Gözlemi) ve E2 (Öğrenci Konferansı) sempozyumları bize en yakın olanlar.",
+ tech:"Bize en yakın oturumlar ayrı bloklar olarak işaretli: B1 (Hall 4), B5.4 (Cuma, Hall 34), E5.4 (Perşembe, G2). Tam liste IAF App'te ve iafastro.directory oturum kataloğunda.",
  spec:"Konu listesi IAF App'te. İlgi çekici bir başlık seçip girin; panellerde soru sormak serbest.",
  gnf:"Soru-cevap kısmında elinizi kaldırmaktan çekinmeyin; öğrenci sorusu genelde ilgi görür.",
  hll:"Konuşmacı listesi IAF App'te ve iafastro.org'da (Highlight Lectures). Gün sonunda iyi bir kapanış.",
